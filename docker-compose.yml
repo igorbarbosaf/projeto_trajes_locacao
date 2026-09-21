@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres: 17
+    image: postgres:17
     container_name: projeto_trajes_locacao
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -12,7 +12,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   pgadmin:
-    image: dpage/pgadmin4: 9.17
+    image: dpage/pgadmin4:9.17
     container_name: pgadmin_projeto_trajes_locacao
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
